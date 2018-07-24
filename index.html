@@ -1,31 +1,254 @@
 <!DOCTYPE html>
+<!--
+TODO:
+    - Take more pictures of acupuncture stuff.
+-->
 <html lang="en">
+
     <head>
-        <meta http-equiv="content-type" content="text/html"; charset=UTF-8">
-        <title>test page</title>
-        <meta name="description" content="Test page">
-        <meta charset="utf-8">
+        <meta http-equiv="content-type" content="text/html"; charset="UTF-8">
+        <title>Castro Valley Wellness Center</title>
+        <meta name="description" content="Castro Valley Wellness Center">
         <meta content="IE=edge,chrome=1" http-equiv="X-UA-Compatible">
         <meta content="width=device-width, initial-scale=1, user-scalable=yes" name="viewport">
         <meta content="FOLLOW, INDEX" name="robots">
+        <!-- <script src="a-street-acu/jquery.js"></script> -->
+        <!-- <script src="a-street-acu/main.js" defer="defer"></script> -->
 
-        <link href="styles/style.css" rel="stylesheet" type="text/css">
+        <!-- <link href="styles/master.css" media="all" rel="stylesheet" type="text/css"> -->
+        <link href="styles/style.css" media="all" rel="stylesheet" type="text/css">
+        <link rel="stylesheet" href="styles/font-awesome.css" integrity="sha384-Wrgq82RsEean5tP3NK3zWAemiNEXofJsTwTyHmNb/iL3dP/sZJ4+7sOld1uqYJtE" crossorigin="anonymous">
     </head>
+
     <body>
-        <header>
-            <nav>
+        <header class="blue-border-bottom">
+            <div class="header-image">
+                <!-- Use this if I can't figure out css background-image
+                <img src="images/porcupine.jpg" alt="logo" style="height:150px;object-fit:cover;width:100%;max-width:900px;display:block;background-size:cover;" alt="header-image">
+                -->
+                <div class="header-text">
+                    C.V. WELLNESS CENTER
+                </div>
+            </div>
+            <nav class="menu">
+                <!--
+                <a class="logo" href="https://www.castrovalleywellness.com/"></a>
+                <a class="logo" style="background-image:url('images/porcupine.jpg'); display:inline-block"></a>
+                <img src="images/porcupine.jpg" alt="logo" style="width:500px;height:100px;">
+                -->
+                <ul id="menu" class="normal-nav">
+                    <li><a class="" title="Welcome" href="#Welcome">Welcome</a></li>
+                    <!-- alternatively, all on one page? Hrm.
+                    <li><a class="" title="Welcome" href="#welcome">Welcome</a></li>
+                    -->
+                    <li><a class="" title="Services" href="#Services">Services</a></li>
+                    <li><a class="" title="Contact" href="#Contact">Contact Us</a></li>
+                </ul>
+                <ul class="mobile-nav">
+                    <!-- Mobile compatibility? research.
+                    <a class="open-nav" href="#">
+                        <img src="styles/open-nav-mobile.svg">
+                    </a>
+                    <a class="close-nav" href="#">
+                        <img src="styles/close.svg">
+                    </a>
+                    -->
+                </ul>
+                <!-- language options - https://scc.suse.com/login -->
+                <!-- Add multi-language support (Korean, Chinese, Vietnamese, Spanish) -->
+                <!-- ?
+                <div class="navbar-collapse collapse">
+                    <ul class="nav navbar-nav navbar-right">
+                        <li class="dropdown">
+                            <a class="dropdown-toggle" data-toggle="dropdown">
+                                English
+                                <span class="caret"</span>
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li>
+                                    <a data-no-turbolink="true" href="https://www.castrovalleywellness.com/?locale=kr">한글</a>
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+                -->
+
             </nav>
         </header>
 
-        <div>
-            <h2>Just testing out Github Pages</h2>
+        <div class="markdown">
 
-            <p>Go check out the <a href="http://phoenotopia.com/">Phoenotopia blog</a>!</p>
+            <a name="Welcome">
+                <!--
+                <h1 id="castro_valley_wellness">Castro Valley Wellness Center</h1>
+                -->
+            <div class="clearfix">
+                <img class="left" src="images/room.jpg" alt="room">
+                <p>Welcome to C.V. Wellness Center.<p>
+                <p>We offer acupuncture treatment and cupping.</p>
+                <p>Please call to schedule an appointment or to ask any questions.</p>
+            </div>
+
+            <!-- put about section in separate page? less clutter on main page
+            <h1 id="about">About Us</h1>
+
+            <p>We provide blah blah</p>
+            -->
+
+            <a name="Services"></a>
+            <h2 id="services">Services</h2>
+            <div class="clearfix">
+                <!--
+                <img src="images/herbs.jpg" style="width:400px;height:250px;float:right;margin:auto;margin-left:50px;margin-bottom:50px;box-shadow:5px 5px 5px rgba(0,0,0,.2);" alt="room">
+                -->
+                <img class="right" src="images/herbs.jpg" alt="room">
+                <ul class="simple">
+                    <li>Acupuncture Treatment</li>
+                    <li>Cupping Only<li>
+                    <li>Herbs w/ Consultation</li>
+                    <li>Probiotics</li>
+                    <li>차가버셧</li>
+                    <li>공진단</li>
+                    <li>경옥대보환 (60 환)</li>
+                    <li>경옥고</li>
+                </ul>
+
+                <!--
+            <table>
+                <tbody>
+                    <tr>
+                        <th>Service</th>
+                        <th style="text-align:center">Cost</th>
+                    </tr>
+                    <tr>
+                        <td>Acupuncture Treatment</td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td><ul class="pricing"><li>First visit (1 ½ hr)<br>
+                                (Initial evaluation & treatment)</li></ul></td>
+                        <td>$140</td>
+                    </tr>
+                    <tr>
+                        <td><ul class="pricing"><li>Follow-up (1 hr)</li></ul></td>
+                        <td>$100</td>
+                    </tr>
+                    <tr>
+                        <td>Cupping Only</td>
+                        <td>$50</td>
+                    </tr>
+                    <tr>
+                        <td>Herbs w/ Consultation</td>
+                        <td>Varies</td>
+                    </tr>
+                    <tr>
+                        <td>Probiotics</td>
+                        <td>$30 / Box</td>
+                    </tr>
+                    <tr>
+                        <td>차가버셧</td>
+                        <td>$100 / 250g</td>
+                    </tr>
+                    <tr>
+                        <td>공진단</td>
+                        <td>$60 / each</td>
+                    </tr>
+                    <tr>
+                        <td>경옥대보환 (60 환)</td>
+                        <td>$350</td>
+                    </tr>
+                    <tr>
+                        <td>경옥고</td>
+                        <td>$300</td>
+                    </tr>
+                </tbody>
+            </table>
+                -->
+
+            <p style="text-align:right">
+                <sub><i>** Insurance coverage may vary depending on insurance plan.</i></sub>
+            </p>
+            </div>
+
+            <hr>
+            <!--
+            <h1 id="contact-us">Contact Us</h1>
+            -->
+            <a name="Contact"></a>
+
+            <div class="row">
+                <div class="column3">
+                    <h4>Contact us at:</h4>
+                    <table class="contact">
+                        <tbody>
+                            <tr>
+                                <td>Tel:</td>
+                                <td>(510) 586 - 9683</td>
+                            </tr>
+                            <tr>
+                                <td>Fax:</td>
+                                <td>(510) 363 - 9354</td>
+                            </tr>
+                            <tr>
+                                <td>Email:</td>
+                                <td><a href="mailto:jycacu@gmail.com">jycacu@gmail.com</a></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+
+                <div class="column3">
+                    <h4>Hours:</h4>
+                    <table class="contact">
+                        <tbody>
+                            <tr>
+                                <td>Monday - Friday:</td>
+                                <td>9am - 5pm</td>
+                            </tr>
+                            <tr>
+                                <td>Saturday:</td>
+                                <td>9am - 5pm</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+
+                <div class="column3">
+                    <h4>Location:</h4>
+                    <p>
+                    3636 Castro Valley Blvd, Suite 8<br>
+                    Castro Valley, CA 94546 &nbsp; &nbsp;
+                    <a href="https://www.google.com/maps/place/3636+Castro+Valley+Blvd,+Castro+Valley,+CA+94546/@37.6956985,-122.0731159,17z/data=!4m13!1m7!3m6!1s0x808f92301ccbe7d3:0x89542ec97fc9007f!2s3636+Castro+Valley+Blvd,+Castro+Valley,+CA+94546!3b1!8m2!3d37.6961426!4d-122.0721374!3m4!1s0x808f92301ccbe7d3:0x89542ec97fc9007f!8m2!3d37.6961426!4d-122.0721374" target="_blank">
+                        <img src="images/open_in_new_window.png" style="width:15px;height:15px;margin:auto;" alt="room" alt="open in new window">
+                    </a>
+                    </p>
+
+                    <!-- TODO: add screenshot of Google Maps location -->
+                    <!-- TODO: Add link to open in Google Maps -->
+                    <!--
+                    <a href="https://www.google.com/maps/place/3636+Castro+Valley+Blvd,+Castro+Valley,+CA+94546/@37.6956985,-122.0731159,17z/data=!4m13!1m7!3m6!1s0x808f92301ccbe7d3:0x89542ec97fc9007f!2s3636+Castro+Valley+Blvd,+Castro+Valley,+CA+94546!3b1!8m2!3d37.6961426!4d-122.0721374!3m4!1s0x808f92301ccbe7d3:0x89542ec97fc9007f!8m2!3d37.6961426!4d-122.0721374">
+                        <img src="images/google_map.png" style="width:250px;height:250px;object-fit:cover">
+                    </a>
+                    -->
+                </div>
+            </div>
 
         </div>
 
-        <footer>
-        </footer>
+    <footer>
+        <!--
+        <ul class="acufooter">
+            <li><a href="about.html">About</a></li>
+            <li class="fsel desktop linklike" data-mode="mobile">mobile</li>
+            <li class="fsel mobile linklike" data-mode="regular">desktop</li>
+        </ul>
+        -->
+        <div class="footer">
+            <hr>
+            <h4 style="text-align:center">C.V. Wellness Center</h4>
+        </div>
+    </footer>
+
     </body>
 </html>
-
